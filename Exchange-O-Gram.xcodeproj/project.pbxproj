@@ -16,6 +16,7 @@
 		8C6D5F6C1ED3308400C979B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C6D5F6B1ED3308400C979B4 /* GoogleService-Info.plist */; };
 		8C6D5F6E1ED35D7A00C979B4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D5F6D1ED35D7A00C979B4 /* MainTabBarController.swift */; };
 		8C6D5F701ED3601C00C979B4 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D5F6F1ED3601C00C979B4 /* UserProfileController.swift */; };
+		8C6D5F731ED3752300C979B4 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D5F721ED3752300C979B4 /* UserProfileHeader.swift */; };
 		C50E56D455E830E234E43138 /* Pods_Exchange_O_Gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CF647C9949A5D98C7B14A4 /* Pods_Exchange_O_Gram.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		8C6D5F6B1ED3308400C979B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C6D5F6D1ED35D7A00C979B4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C6D5F6F1ED3601C00C979B4 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		8C6D5F721ED3752300C979B4 /* UserProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		F1CF647C9949A5D98C7B14A4 /* Pods_Exchange_O_Gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchange_O_Gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03AC796D4D15DF30574BDE /* Pods-Exchange-O-Gram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange-O-Gram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchange-O-Gram/Pods-Exchange-O-Gram.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,10 +88,10 @@
 		8C5B0DBF1ED316D900579282 /* Exchange-O-Gram */ = {
 			isa = PBXGroup;
 			children = (
+				8C6D5F711ED3750B00C979B4 /* UserProfile */,
 				8C6D5F681ED3295900C979B4 /* Utils */,
 				8C5B0DC01ED316D900579282 /* AppDelegate.swift */,
 				8C6D5F6D1ED35D7A00C979B4 /* MainTabBarController.swift */,
-				8C6D5F6F1ED3601C00C979B4 /* UserProfileController.swift */,
 				8C5B0DC21ED316D900579282 /* ViewController.swift */,
 				8C5B0DC41ED316D900579282 /* Main.storyboard */,
 				8C5B0DC71ED316D900579282 /* Assets.xcassets */,
@@ -106,6 +108,15 @@
 				8C6D5F691ED3296B00C979B4 /* Extensions.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		8C6D5F711ED3750B00C979B4 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D5F6F1ED3601C00C979B4 /* UserProfileController.swift */,
+				8C6D5F721ED3752300C979B4 /* UserProfileHeader.swift */,
+			);
+			name = UserProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 				8C5B0DC31ED316D900579282 /* ViewController.swift in Sources */,
 				8C6D5F6A1ED3296B00C979B4 /* Extensions.swift in Sources */,
 				8C6D5F6E1ED35D7A00C979B4 /* MainTabBarController.swift in Sources */,
+				8C6D5F731ED3752300C979B4 /* UserProfileHeader.swift in Sources */,
 				8C6D5F701ED3601C00C979B4 /* UserProfileController.swift in Sources */,
 				8C5B0DC11ED316D900579282 /* AppDelegate.swift in Sources */,
 			);
