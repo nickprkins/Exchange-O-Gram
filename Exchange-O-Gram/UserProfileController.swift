@@ -34,8 +34,8 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 200)
     }
-    var user: User?
     
+    var user: User?
     fileprivate func fetchUser() {
         guard let uid = FIRAuth.auth()?.currentUser?.uid else { return }
         
@@ -45,7 +45,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
             guard let dictionary = snapshot.value as? [String: Any] else { return }
             
             self.user = User(dictionary: dictionary)
-            
             self.navigationItem.title = self.user?.username
             
             self.collectionView?.reloadData()
@@ -62,6 +61,6 @@ struct User {
     
     init(dictionary: [String: Any]) {
         self.username = dictionary["username"] as? String ?? ""
-        self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
+        self.profileImageUrl = dictionary["profileImageUrl"]  as? String ?? ""
     }
 }

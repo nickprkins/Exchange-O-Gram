@@ -135,7 +135,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 guard let uid = user?.uid else { return }
                 
-                let dictionaryValues = ["username": username, "profileImageURL": profileImageUrl]
+                let dictionaryValues = ["username": username, "profileImageUrl": profileImageUrl]
                 let values = [uid: dictionaryValues]
                 
                 FIRDatabase.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in

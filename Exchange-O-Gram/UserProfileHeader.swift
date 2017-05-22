@@ -23,11 +23,11 @@ class UserProfileHeader: UICollectionViewCell {
         backgroundColor = .blue
         
         addSubview(profileImageView)
-        
         profileImageView.anchor(top: topAnchor, left: leftAnchor, bottom: nil, right: nil, paddingTop: 12, paddingLeft: 12, paddingBottom: 0, paddingRight: 0, width: 80, height: 80)
         profileImageView.layer.cornerRadius = 80 / 2
         profileImageView.clipsToBounds = true
     }
+    
     var user: User? {
         didSet {
             setupProfileImage()
@@ -40,20 +40,20 @@ class UserProfileHeader: UICollectionViewCell {
         guard let url = URL(string: profileImageUrl) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, err) in
-            
             //check for the error, then construct the image using data
             if let err = err {
                 print("Failed to fetch profile image:", err)
                 return
             }
             
-            //check for response status 200
+            //check for response status of 200
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { print(response.debugDescription); return }
             
             guard let data = data else { return }
             
             let image = UIImage(data: data)
             
-            //the URLSesson block is on background thread, so to get the image changed you need to be on the main thread.
+            //Get back onto the main UI thread. URLSession is done on background thread
             DispatchQueue.main.async {
                 self.profileImageView.image = image
             }
