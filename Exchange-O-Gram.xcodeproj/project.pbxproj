@@ -12,6 +12,7 @@
 		8C5B0DC61ED316D900579282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B0DC41ED316D900579282 /* Main.storyboard */; };
 		8C5B0DC81ED316D900579282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B0DC71ED316D900579282 /* Assets.xcassets */; };
 		8C5B0DCB1ED316D900579282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5B0DC91ED316D900579282 /* LaunchScreen.storyboard */; };
+		8C6D5F6A1ED3296B00C979B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D5F691ED3296B00C979B4 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C5B0DC71ED316D900579282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C5B0DCA1ED316D900579282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C5B0DCC1ED316D900579282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6D5F691ED3296B00C979B4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		8C5B0DBF1ED316D900579282 /* Exchange-O-Gram */ = {
 			isa = PBXGroup;
 			children = (
+				8C6D5F681ED3295900C979B4 /* Utils */,
 				8C5B0DC01ED316D900579282 /* AppDelegate.swift */,
 				8C5B0DC21ED316D900579282 /* ViewController.swift */,
 				8C5B0DC41ED316D900579282 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				8C5B0DCC1ED316D900579282 /* Info.plist */,
 			);
 			path = "Exchange-O-Gram";
+			sourceTree = "<group>";
+		};
+		8C6D5F681ED3295900C979B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C6D5F691ED3296B00C979B4 /* Extensions.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5B0DC31ED316D900579282 /* ViewController.swift in Sources */,
+				8C6D5F6A1ED3296B00C979B4 /* Extensions.swift in Sources */,
 				8C5B0DC11ED316D900579282 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +314,7 @@
 				8C5B0DD11ED316D900579282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
